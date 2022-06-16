@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewAnimate: SpringView!
     @IBOutlet weak var discriptionLable: UILabel!
     
-    
     @IBAction func enableAnimation(_ sender: SpringButton) {
     }
 }
