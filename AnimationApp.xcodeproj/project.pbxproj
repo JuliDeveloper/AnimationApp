@@ -12,9 +12,9 @@
 		255AA5E9285B503400696810 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255AA5E8285B503400696810 /* ViewController.swift */; };
 		255AA5EC285B503400696810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255AA5EA285B503400696810 /* Main.storyboard */; };
 		255AA5EE285B503600696810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255AA5ED285B503600696810 /* Assets.xcassets */; };
-		255AA5F1285B503600696810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255AA5EF285B503600696810 /* LaunchScreen.storyboard */; };
 		255AA5FE285B632500696810 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255AA5FD285B632500696810 /* Animation.swift */; };
 		255AA600285B642B00696810 /* DataMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255AA5FF285B642B00696810 /* DataMananger.swift */; };
+		255AA604285B8AE200696810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255AA5EF285B503600696810 /* LaunchScreen.storyboard */; };
 		FA8F00CF722F9D43E9874BF1 /* Pods_AnimationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C484D01B7E8F62DB8185E8 /* Pods_AnimationApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -205,7 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				255AA5F1285B503600696810 /* LaunchScreen.storyboard in Resources */,
+				255AA604285B8AE200696810 /* LaunchScreen.storyboard in Resources */,
 				255AA5EE285B503600696810 /* Assets.xcassets in Resources */,
 				255AA5EC285B503400696810 /* Main.storyboard in Resources */,
 			);
