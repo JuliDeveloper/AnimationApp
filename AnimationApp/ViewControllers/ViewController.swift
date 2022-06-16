@@ -9,11 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var viewAnimate: UIView!
+    @IBOutlet weak var discriptionLable: UILabel!
+    
+    
+    @IBAction func enableAnimation(_ sender: UIButton) {
     }
-
-
 }
 

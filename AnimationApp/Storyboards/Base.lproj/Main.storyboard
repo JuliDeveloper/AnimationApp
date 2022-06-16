@@ -54,6 +54,9 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="enableAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="stT-el-zAd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -67,6 +70,10 @@
                             <constraint firstItem="H6N-xp-uW6" firstAttribute="width" secondItem="jfK-6Q-md6" secondAttribute="width" multiplier="0.213376" constant="248" id="u7Z-MA-D0g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="discriptionLable" destination="GCS-vC-hDQ" id="Ief-NF-Dl0"/>
+                        <outlet property="viewAnimate" destination="jfK-6Q-md6" id="KTO-6V-IKr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
