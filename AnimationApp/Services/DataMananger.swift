@@ -51,6 +51,7 @@ class DataAnimation {
     
     let duration = Double.random(in: 1.00...3.00)
     let delay = Double.random(in: 0.10...1.00)
+    let force = Double.random(in: 1...20)
     
     private init() {}
 }

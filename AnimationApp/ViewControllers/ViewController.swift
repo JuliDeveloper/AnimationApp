@@ -39,12 +39,14 @@ class ViewController: UIViewController {
             curve: \(animationView.curve)
             duration: \(String(format: "%.2f", animationView.duration))
             delay: \(String(format: "%.2f", animationView.delay))
+            force: \(String(format: "%.2f", animationView.force))
             """
         
         viewAnimate.animation = animationView.name
         viewAnimate.curve = animationView.curve
         viewAnimate.duration = animationView.duration
         viewAnimate.delay = animationView.delay
+        viewAnimate.force = animationView.force
         viewAnimate.animate()
         
         sender.setTitle(animationView.name, for: .normal)

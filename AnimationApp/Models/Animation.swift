@@ -12,6 +12,7 @@ struct Animation {
     let curve: String
     let duration: Double
     let delay: Double
+    let force: Double
     
     static func getAnimation() -> Animation {
         let dataAnimation = DataAnimation.shared
@@ -20,7 +21,8 @@ struct Animation {
         let curve = dataAnimation.curve.randomElement() ?? ""
         let duration = dataAnimation.duration
         let delay = dataAnimation.delay
+        let force = dataAnimation.force
         
-        return Animation(name: name, curve: curve, duration: duration, delay: delay)
+        return Animation(name: name, curve: curve, duration: duration, delay: delay, force: force)
     }
 }
