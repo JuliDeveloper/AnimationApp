@@ -49,12 +49,7 @@ class ViewController: UIViewController {
         viewAnimate.force = animationView.force
         viewAnimate.animate()
         
-        sender.setTitle(animationView.name, for: .normal)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            sender.setTitle("NEXT: \(animationButton.name)", for: .normal)
-        }
-        
+        sender.setTitle("NEXT: \(animationButton.name)", for: .normal)
     }
 }
 
