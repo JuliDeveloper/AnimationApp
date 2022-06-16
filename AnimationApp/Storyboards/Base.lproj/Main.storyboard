@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfK-6Q-md6">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfK-6Q-md6" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="50" y="144" width="314" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCS-vC-hDQ">
@@ -38,7 +38,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6N-xp-uW6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6N-xp-uW6" customClass="SpringButton" customModule="Spring">
                                 <rect key="frame" x="49.5" y="662" width="315" height="50"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.4039215686" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -55,7 +55,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="enableAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="stT-el-zAd"/>
+                                    <action selector="enableAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYC-qs-udx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,7 +72,7 @@
                     </view>
                     <connections>
                         <outlet property="discriptionLable" destination="GCS-vC-hDQ" id="Ief-NF-Dl0"/>
-                        <outlet property="viewAnimate" destination="jfK-6Q-md6" id="KTO-6V-IKr"/>
+                        <outlet property="viewAnimate" destination="jfK-6Q-md6" id="s2I-G3-nOQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
