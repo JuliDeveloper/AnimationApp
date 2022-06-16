@@ -14,7 +14,7 @@ struct Animation {
     let delay: Double
     
     static func getAnimation() -> Animation {
-        let dataAnimation = DataAnimation.shared
+        let dataAnimation = DataAnimation()
         
         let name = dataAnimation.name.randomElement() ?? ""
         let curve = dataAnimation.curve.randomElement() ?? ""

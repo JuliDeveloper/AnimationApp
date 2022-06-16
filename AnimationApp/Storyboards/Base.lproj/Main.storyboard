@@ -71,6 +71,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonAnimate" destination="H6N-xp-uW6" id="uxh-Vc-kkr"/>
                         <outlet property="discriptionLable" destination="GCS-vC-hDQ" id="Ief-NF-Dl0"/>
                         <outlet property="viewAnimate" destination="jfK-6Q-md6" id="s2I-G3-nOQ"/>
                     </connections>
