@@ -31,6 +31,7 @@
                                     <constraint firstItem="GCS-vC-hDQ" firstAttribute="leading" secondItem="jfK-6Q-md6" secondAttribute="leading" constant="20" id="K66-Gb-hK2"/>
                                     <constraint firstItem="GCS-vC-hDQ" firstAttribute="top" secondItem="jfK-6Q-md6" secondAttribute="top" constant="20" id="R1Q-EE-Mlg"/>
                                     <constraint firstAttribute="height" constant="200" id="evy-2Z-Z1G"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GCS-vC-hDQ" secondAttribute="trailing" constant="20" symbolic="YES" id="jvM-Vv-5WD"/>
                                     <constraint firstAttribute="bottom" secondItem="GCS-vC-hDQ" secondAttribute="bottom" constant="20" id="pgR-k7-OT5"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
