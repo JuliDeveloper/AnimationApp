@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             """
             name: \(animationView.name)
             curve: \(animationView.curve)
-            duration: \(String(format: "%.2f", animationView.duration)   )
+            duration: \(String(format: "%.2f", animationView.duration))
             delay: \(String(format: "%.2f", animationView.delay))
             """
         
