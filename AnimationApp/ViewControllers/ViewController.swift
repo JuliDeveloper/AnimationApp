@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        discriptionLable.text = "Name animation"
         buttonAnimate.setTitle("Run", for: .normal)
     }
     
@@ -34,12 +33,13 @@ class ViewController: UIViewController {
             stateAniamtion = animationButton
         }
         
-        discriptionLable.text = """
-        name: \(animationView.name)
-        curve: \(animationView.curve)
-        duration: \(String(format: "%.2f", animationView.duration)   )
-        delay: \(String(format: "%.2f", animationView.delay))
-"""
+        discriptionLable.text =
+            """
+            name: \(animationView.name)
+            curve: \(animationView.curve)
+            duration: \(String(format: "%.2f", animationView.duration)   )
+            delay: \(String(format: "%.2f", animationView.delay))
+            """
         
         viewAnimate.animation = animationView.name
         viewAnimate.curve = animationView.curve
