@@ -9,8 +9,6 @@ import Foundation
 
 class DataAnimation {
     
-    static let shared = DataAnimation()
-    
     let name = [
         "slideLeft",
         "shake",
@@ -51,7 +49,6 @@ class DataAnimation {
     
     let duration = Double.random(in: 1.00...3.00)
     let delay = Double.random(in: 0.10...1.00)
-    let force = Double.random(in: 1...20)
+    let force = Double.random(in: 1...10)
     
-    private init() {}
 }
