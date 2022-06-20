@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var discriptionLable: UILabel!
     @IBOutlet weak var buttonAnimate: SpringButton!
     
-    var stateAniamtion: Animation!
+    private var animation = Animation.getAnimation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,33 +23,18 @@ class ViewController: UIViewController {
     
     @IBAction func enableAnimation(_ sender: SpringButton) {
         
-        var animationView = Animation.getAnimation()
-        let animationButton = Animation.getAnimation()
+        discriptionLable.text = animation.description
         
-        if stateAniamtion == nil {
-            stateAniamtion = animationButton
-        } else {
-            animationView = stateAniamtion
-            stateAniamtion = animationButton
-        }
-        
-        discriptionLable.text =
-            """
-            name: \(animationView.name)
-            curve: \(animationView.curve)
-            duration: \(String(format: "%.2f", animationView.duration))
-            delay: \(String(format: "%.2f", animationView.delay))
-            force: \(String(format: "%.2f", animationView.force))
-            """
-        
-        viewAnimate.animation = animationView.name
-        viewAnimate.curve = animationView.curve
-        viewAnimate.duration = animationView.duration
-        viewAnimate.delay = animationView.delay
-        viewAnimate.force = animationView.force
+        viewAnimate.animation = animation.name
+        viewAnimate.curve = animation.curve
+        viewAnimate.duration = animation.duration
+        viewAnimate.delay = animation.delay
+        viewAnimate.force = animation.force
         viewAnimate.animate()
         
-        sender.setTitle("NEXT: \(animationButton.name)", for: .normal)
+        animation = Animation.getAnimation()
+        
+        sender.setTitle("NEXT: \(animation.name)", for: .normal)
     }
 }
 

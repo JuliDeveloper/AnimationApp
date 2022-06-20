@@ -14,15 +14,21 @@ struct Animation {
     let delay: Double
     let force: Double
     
+    var description: String {
+        """
+        name: \(name)
+        curve: \(curve)
+        duration: \(String(format: "%.2f", duration))
+        delay: \(String(format: "%.2f", delay))
+        force: \(String(format: "%.2f", force))
+        """
+    }
+    
     static func getAnimation() -> Animation {
-        let dataAnimation = DataAnimation()
-        
-        let name = dataAnimation.name.randomElement() ?? ""
-        let curve = dataAnimation.curve.randomElement() ?? ""
-        let duration = dataAnimation.duration
-        let delay = dataAnimation.delay
-        let force = dataAnimation.force
-        
-        return Animation(name: name, curve: curve, duration: duration, delay: delay, force: force)
+        Animation(name: DataAnimation.shared.name.randomElement()?.rawValue ?? "",
+                  curve: DataAnimation.shared.curve.randomElement()?.rawValue ?? "" ,
+                  duration: DataAnimation.shared.duration,
+                  delay: DataAnimation.shared.delay,
+                  force: DataAnimation.shared.force)
     }
 }
